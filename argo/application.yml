@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: guestbook-app
+  namespace: postcheck
+spec:
+  project: postcheck
+  source:
+    path: argo
+	  repoURL: "https://github.com/Sachin-G07/argo"
+	  targetRevision: HEAD
+  destination:
+    server: 'https://api.telamon.diamond.ac.uk:6443'
+    namespace: postcheck

@@ -8,7 +8,6 @@ metadata:
 spec:
   destination:
     namespace: k8s-test
-    name: telamon
   project: k8s-test
   source:
     path: argo

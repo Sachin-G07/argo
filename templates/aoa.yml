@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: aoa
+  namespace: k8s-test
+  finalizers:
+   - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: k8s-test
+    name: telamon
+  project: k8s-test
+  source:
+    path: argo
+    repoURL: https://github.com/Sachin-G07/argo.git
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
+

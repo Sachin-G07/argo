@@ -8,7 +8,7 @@ metadata:
 spec:
   destination:
     namespace: oew72229
-  project: oew72229
+  project: k8s-test
   source:
     path: argo/oew72229
     repoURL: https://github.com/Sachin-G07/argo.git

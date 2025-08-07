@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: aoa
+  namespace: oew72229
+  finalizers:
+   - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: oew72229
+  project: oew72229
+  source:
+    path: argo/oew72229
+    repoURL: https://github.com/Sachin-G07/argo.git
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

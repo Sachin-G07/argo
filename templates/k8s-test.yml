@@ -10,12 +10,13 @@ spec:
     namespace: k8s-test
   project: k8s-test
   source:
-    path: argo
+    path: argo/k8s-test
     repoURL: https://github.com/Sachin-G07/argo.git
     targetRevision: HEAD
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
+
 
 

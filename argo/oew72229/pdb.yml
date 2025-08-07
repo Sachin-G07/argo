@@ -1,0 +1,9 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: argo-pdb
+spec:
+  minAvailable: 2
+  selector:
+    matchLabels:
+      app: guestbook-ui

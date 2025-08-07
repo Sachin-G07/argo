@@ -13,7 +13,7 @@ spec:
   source:
     path: argo
     repoURL: https://github.com/Sachin-G07/argo.git
-    targetRevision: main
+    targetRevision: HEAD
   syncPolicy:
     automated:
       prune: true

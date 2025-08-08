@@ -8,6 +8,7 @@ metadata:
 spec:
   destination:
     namespace: k8s-test
+    server: https://api.telamon.diamond.ac.uk:6443
   project: k8s-test
   source:
     path: argo/k8s-test

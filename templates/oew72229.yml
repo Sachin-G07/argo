@@ -8,6 +8,7 @@ metadata:
 spec:
   destination:
     namespace: oew72229
+    server: telamon
   project: k8s-test
   source:
     path: argo/oew72229

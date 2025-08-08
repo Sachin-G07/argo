@@ -16,5 +16,9 @@ spec:
       containers:
       - image: nginx
         name: guestbook-ui
+        securityContext:
+          capabilities:
+            drop:
+              - ALL
         ports:
         - containerPort: 80

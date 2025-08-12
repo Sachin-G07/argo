@@ -2,12 +2,12 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: aoa
-  namespace: oew72229
+  namespace: workflows
   finalizers:
    - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: oew72229
+    namespace: workflows
     server: https://api.telamon.diamond.ac.uk:6443
   project: k8s-test
   source:

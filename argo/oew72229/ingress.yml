@@ -8,6 +8,7 @@ spec:
   ingressClassName: nginx
   rules:
   - http:
+    host: oew72229.diamond.ac.uk
       paths:
       - path: /
         pathType: Prefix

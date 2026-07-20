@@ -7,8 +7,8 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - http:
-    host: oew72229.diamond.ac.uk
+  - host: oew72229.diamond.ac.uk
+    http:
       paths:
       - path: /
         pathType: Prefix
